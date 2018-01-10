@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  web:
+    build: .
+    env_file: setup.env
+    networks:
+      default:
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/opt/personal-website
+
+
